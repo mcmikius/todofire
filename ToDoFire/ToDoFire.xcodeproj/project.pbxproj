@@ -14,8 +14,14 @@
 		FB073BFC221693D6005BE268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB073BFB221693D6005BE268 /* Assets.xcassets */; };
 		FB073BFF221693D6005BE268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB073BFD221693D6005BE268 /* LaunchScreen.storyboard */; };
 		FB073C072216995C005BE268 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB073C062216995C005BE268 /* TasksViewController.swift */; };
-		FB073C0B22169A4D005BE268 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB073C0A22169A4D005BE268 /* Default-568h@2x.png */; };
 		FB073C0F22169F17005BE268 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB073C0E22169F17005BE268 /* GoogleService-Info.plist */; };
+		FB7DA5F92216BC9E009AA708 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA5F82216BC9E009AA708 /* FirebaseAuth.framework */; };
+		FB7DA5FB2216BC9E009AA708 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA5FA2216BC9E009AA708 /* FirebaseCore.framework */; };
+		FB7DA5FD2216BC9E009AA708 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA5FC2216BC9E009AA708 /* FirebaseDatabase.framework */; };
+		FB7DA5FF2216BC9E009AA708 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA5FE2216BC9E009AA708 /* GoogleUtilities.framework */; };
+		FB7DA6012216BC9E009AA708 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6002216BC9E009AA708 /* GTMSessionFetcher.framework */; };
+		FB7DA6032216BC9E009AA708 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6022216BC9E009AA708 /* leveldb.framework */; };
+		FB7DA6052216BC9E009AA708 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6042216BC9E009AA708 /* nanopb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +34,16 @@
 		FB073BF9221693D5005BE268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB073BFB221693D6005BE268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB073BFE221693D6005BE268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FB073C00221693D6005BE268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB073C00221693D6005BE268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ToDoFire/SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
 		FB073C062216995C005BE268 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
-		FB073C0A22169A4D005BE268 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FB073C0E22169F17005BE268 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB7DA5F82216BC9E009AA708 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7DA5FA2216BC9E009AA708 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7DA5FC2216BC9E009AA708 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7DA5FE2216BC9E009AA708 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7DA6002216BC9E009AA708 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7DA6022216BC9E009AA708 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7DA6042216BC9E009AA708 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7DA5F92216BC9E009AA708 /* FirebaseAuth.framework in Frameworks */,
+				FB7DA5FB2216BC9E009AA708 /* FirebaseCore.framework in Frameworks */,
+				FB7DA5FD2216BC9E009AA708 /* FirebaseDatabase.framework in Frameworks */,
+				FB7DA5FF2216BC9E009AA708 /* GoogleUtilities.framework in Frameworks */,
+				FB7DA6012216BC9E009AA708 /* GTMSessionFetcher.framework in Frameworks */,
+				FB7DA6032216BC9E009AA708 /* leveldb.framework in Frameworks */,
+				FB7DA6052216BC9E009AA708 /* nanopb.framework in Frameworks */,
 				8404147541883C863A09C291 /* Pods_ToDoFire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +68,13 @@
 		411EAF1F2DDED69497D1048C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB7DA5F82216BC9E009AA708 /* FirebaseAuth.framework */,
+				FB7DA5FA2216BC9E009AA708 /* FirebaseCore.framework */,
+				FB7DA5FC2216BC9E009AA708 /* FirebaseDatabase.framework */,
+				FB7DA5FE2216BC9E009AA708 /* GoogleUtilities.framework */,
+				FB7DA6002216BC9E009AA708 /* GTMSessionFetcher.framework */,
+				FB7DA6022216BC9E009AA708 /* leveldb.framework */,
+				FB7DA6042216BC9E009AA708 /* nanopb.framework */,
 				BA720C796A555086D4BDDC7C /* Pods_ToDoFire.framework */,
 			);
 			name = Frameworks;
@@ -66,7 +92,6 @@
 		FB073BE8221693D5005BE268 = {
 			isa = PBXGroup;
 			children = (
-				FB073C0A22169A4D005BE268 /* Default-568h@2x.png */,
 				FB073BF3221693D5005BE268 /* ToDoFire */,
 				FB073BF2221693D5005BE268 /* Products */,
 				9D49C0FC7B7558385BD6BEE0 /* Pods */,
@@ -85,7 +110,6 @@
 		FB073BF3221693D5005BE268 /* ToDoFire */ = {
 			isa = PBXGroup;
 			children = (
-				FB073C00221693D6005BE268 /* Info.plist */,
 				FB073C092216998A005BE268 /* Controller */,
 				FB073C082216997C005BE268 /* SupportingFiles */,
 			);
@@ -95,6 +119,7 @@
 		FB073C082216997C005BE268 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				FB073C00221693D6005BE268 /* Info.plist */,
 				FB073C0E22169F17005BE268 /* GoogleService-Info.plist */,
 				FB073BF4221693D5005BE268 /* AppDelegate.swift */,
 				FB073BF8221693D5005BE268 /* Main.storyboard */,
@@ -174,7 +199,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB073BFF221693D6005BE268 /* LaunchScreen.storyboard in Resources */,
-				FB073C0B22169A4D005BE268 /* Default-568h@2x.png in Resources */,
 				FB073C0F22169F17005BE268 /* GoogleService-Info.plist in Resources */,
 				FB073BFC221693D6005BE268 /* Assets.xcassets in Resources */,
 				FB073BFA221693D5005BE268 /* Main.storyboard in Resources */,
@@ -392,7 +416,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GYWWW55376;
-				INFOPLIST_FILE = ToDoFire/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDoFire/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,7 +436,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GYWWW55376;
-				INFOPLIST_FILE = ToDoFire/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDoFire/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

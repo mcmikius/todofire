@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ToDoFire" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +75,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tao-2h-qZ9"/>
-                                                    <segue destination="5gc-nM-Dnh" kind="show" identifier="tasksSegue" id="BYx-RR-fIu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXM-hO-3Ey">
@@ -120,9 +118,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="wm5-bF-XFn" id="Ox7-r3-BFy"/>
+                        <outlet property="emailTextField" destination="wm5-bF-XFn" id="PTe-5v-qvr"/>
                         <outlet property="passwordTextField" destination="te2-vw-7B4" id="FUn-Sc-eHo"/>
                         <outlet property="warnLabel" destination="nBP-xm-3TK" id="FaV-pz-pXi"/>
+                        <segue destination="5gc-nM-Dnh" kind="show" identifier="tasksSegue" id="EHj-aT-1eB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -168,6 +167,11 @@
                         <viewLayoutGuide key="safeArea" id="Xtu-hf-fij"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="gYJ-sT-dBH">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="M2H-ie-EIo">
+                            <connections>
+                                <action selector="signOutTapped:" destination="oIO-Ps-AbA" id="xbw-LZ-dBn"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="L2Y-Tb-Ihd">
                             <connections>
                                 <action selector="addTapped:" destination="oIO-Ps-AbA" id="9Es-sa-GR4"/>

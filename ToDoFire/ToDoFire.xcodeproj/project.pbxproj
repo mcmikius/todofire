@@ -22,6 +22,8 @@
 		FB7DA6012216BC9E009AA708 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6002216BC9E009AA708 /* GTMSessionFetcher.framework */; };
 		FB7DA6032216BC9E009AA708 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6022216BC9E009AA708 /* leveldb.framework */; };
 		FB7DA6052216BC9E009AA708 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6042216BC9E009AA708 /* nanopb.framework */; };
+		FBD97B232216EB9500983D82 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD97B222216EB9500983D82 /* Task.swift */; };
+		FBD97B252216EBA000983D82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD97B242216EBA000983D82 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		FB7DA6002216BC9E009AA708 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7DA6022216BC9E009AA708 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7DA6042216BC9E009AA708 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD97B222216EB9500983D82 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FBD97B242216EBA000983D82 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		FB073BF3221693D5005BE268 /* ToDoFire */ = {
 			isa = PBXGroup;
 			children = (
+				FBD97B262216EBA700983D82 /* Models */,
 				FB073C092216998A005BE268 /* Controller */,
 				FB073C082216997C005BE268 /* SupportingFiles */,
 			);
@@ -136,6 +141,15 @@
 				FB073C062216995C005BE268 /* TasksViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FBD97B262216EBA700983D82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBD97B222216EB9500983D82 /* Task.swift */,
+				FBD97B242216EBA000983D82 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD97B232216EB9500983D82 /* Task.swift in Sources */,
 				FB073BF7221693D5005BE268 /* LoginViewController.swift in Sources */,
 				FB073BF5221693D5005BE268 /* AppDelegate.swift in Sources */,
+				FBD97B252216EBA000983D82 /* User.swift in Sources */,
 				FB073C072216995C005BE268 /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

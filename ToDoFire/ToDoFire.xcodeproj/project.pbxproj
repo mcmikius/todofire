@@ -15,15 +15,9 @@
 		FB073BFF221693D6005BE268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB073BFD221693D6005BE268 /* LaunchScreen.storyboard */; };
 		FB073C072216995C005BE268 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB073C062216995C005BE268 /* TasksViewController.swift */; };
 		FB073C0F22169F17005BE268 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB073C0E22169F17005BE268 /* GoogleService-Info.plist */; };
-		FB7DA5F92216BC9E009AA708 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA5F82216BC9E009AA708 /* FirebaseAuth.framework */; };
-		FB7DA5FB2216BC9E009AA708 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA5FA2216BC9E009AA708 /* FirebaseCore.framework */; };
-		FB7DA5FD2216BC9E009AA708 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA5FC2216BC9E009AA708 /* FirebaseDatabase.framework */; };
-		FB7DA5FF2216BC9E009AA708 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA5FE2216BC9E009AA708 /* GoogleUtilities.framework */; };
-		FB7DA6012216BC9E009AA708 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6002216BC9E009AA708 /* GTMSessionFetcher.framework */; };
-		FB7DA6032216BC9E009AA708 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6022216BC9E009AA708 /* leveldb.framework */; };
-		FB7DA6052216BC9E009AA708 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7DA6042216BC9E009AA708 /* nanopb.framework */; };
+		FB5B577E22172716007A6502 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5B577D22172716007A6502 /* ExternalAccessory.framework */; };
 		FBD97B232216EB9500983D82 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD97B222216EB9500983D82 /* Task.swift */; };
-		FBD97B252216EBA000983D82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD97B242216EBA000983D82 /* User.swift */; };
+		FBD97B252216EBA000983D82 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD97B242216EBA000983D82 /* CurrentUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +33,8 @@
 		FB073C00221693D6005BE268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ToDoFire/SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
 		FB073C062216995C005BE268 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		FB073C0E22169F17005BE268 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB5B577D22172716007A6502 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		FB5B577F22172716007A6502 /* ToDoFire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToDoFire.entitlements; sourceTree = "<group>"; };
 		FB7DA5F82216BC9E009AA708 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7DA5FA2216BC9E009AA708 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7DA5FC2216BC9E009AA708 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +43,7 @@
 		FB7DA6022216BC9E009AA708 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7DA6042216BC9E009AA708 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD97B222216EB9500983D82 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		FBD97B242216EBA000983D82 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FBD97B242216EBA000983D82 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7DA5F92216BC9E009AA708 /* FirebaseAuth.framework in Frameworks */,
-				FB7DA5FB2216BC9E009AA708 /* FirebaseCore.framework in Frameworks */,
-				FB7DA5FD2216BC9E009AA708 /* FirebaseDatabase.framework in Frameworks */,
-				FB7DA5FF2216BC9E009AA708 /* GoogleUtilities.framework in Frameworks */,
-				FB7DA6012216BC9E009AA708 /* GTMSessionFetcher.framework in Frameworks */,
-				FB7DA6032216BC9E009AA708 /* leveldb.framework in Frameworks */,
-				FB7DA6052216BC9E009AA708 /* nanopb.framework in Frameworks */,
+				FB5B577E22172716007A6502 /* ExternalAccessory.framework in Frameworks */,
 				8404147541883C863A09C291 /* Pods_ToDoFire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +62,7 @@
 		411EAF1F2DDED69497D1048C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB5B577D22172716007A6502 /* ExternalAccessory.framework */,
 				FB7DA5F82216BC9E009AA708 /* FirebaseAuth.framework */,
 				FB7DA5FA2216BC9E009AA708 /* FirebaseCore.framework */,
 				FB7DA5FC2216BC9E009AA708 /* FirebaseDatabase.framework */,
@@ -114,6 +105,7 @@
 		FB073BF3221693D5005BE268 /* ToDoFire */ = {
 			isa = PBXGroup;
 			children = (
+				FB5B577F22172716007A6502 /* ToDoFire.entitlements */,
 				FBD97B262216EBA700983D82 /* Models */,
 				FB073C092216998A005BE268 /* Controller */,
 				FB073C082216997C005BE268 /* SupportingFiles */,
@@ -147,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD97B222216EB9500983D82 /* Task.swift */,
-				FBD97B242216EBA000983D82 /* User.swift */,
+				FBD97B242216EBA000983D82 /* CurrentUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +178,11 @@
 				TargetAttributes = {
 					FB073BF0221693D5005BE268 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,7 +279,7 @@
 				FBD97B232216EB9500983D82 /* Task.swift in Sources */,
 				FB073BF7221693D5005BE268 /* LoginViewController.swift in Sources */,
 				FB073BF5221693D5005BE268 /* AppDelegate.swift in Sources */,
-				FBD97B252216EBA000983D82 /* User.swift in Sources */,
+				FBD97B252216EBA000983D82 /* CurrentUser.swift in Sources */,
 				FB073C072216995C005BE268 /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +427,7 @@
 			baseConfigurationReference = 7494DF7B465D12FE78C52B3F /* Pods-ToDoFire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ToDoFire/ToDoFire.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GYWWW55376;
 				INFOPLIST_FILE = "$(SRCROOT)/ToDoFire/SupportingFiles/Info.plist";
@@ -450,6 +448,7 @@
 			baseConfigurationReference = DF92D396301B780E689FD727 /* Pods-ToDoFire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ToDoFire/ToDoFire.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GYWWW55376;
 				INFOPLIST_FILE = "$(SRCROOT)/ToDoFire/SupportingFiles/Info.plist";
